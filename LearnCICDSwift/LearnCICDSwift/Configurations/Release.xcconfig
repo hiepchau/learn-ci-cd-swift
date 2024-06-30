@@ -1,0 +1,17 @@
+//
+//  Release.xcconfig
+//  LearnCICDSwift
+//
+//  Created by Hiệp Châu on 30/6/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = LearnCICDSwift
+APP_BUNDLE_IDENTIFIER = com.yourcompany.LearnCICDSwift
+CURRENT_PROJECT_VERSION = 1
+MARKETING_VERSION = 1.0.0
+EXECUTABLE_NAME = $(APP_NAME)
+PRODUCT_MODULE_NAME = LearnCICDSwift
+TMN_CODE = APPRELEASE
