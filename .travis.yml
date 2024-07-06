@@ -1,14 +1,14 @@
 language: swift
 osx_image: xcode13.2
-xcode_workspace: LearnCICDSwift.xcworkspace
+xcode_workspace: LearnCICDSwift/LearnCICDSwift.xcworkspace
 xcode_scheme: LearnCICDSwift
-xcode_destination: platform=iOS Simulator,OS=15.0,name=iPhone 13
+xcode_destination: platform=iOS Simulator,OS=15.4,name=iPhone 12 Pro Max
 
 before_install:
   - gem install bundler
   - bundle install
-  - bundle exec pod install
+  - bundle exec pod install --project-directory=LearnCICDSwift
 
 script:
-  - bundle exec xcodebuild clean build -workspace LearnCICDSwift.xcworkspace -scheme LearnCICDSwift -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=15.4' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
-  - bundle exec xcodebuild test -workspace LearnCICDSwift.xcworkspace -scheme LearnCICDSwift -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=15.4' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
+  - bundle exec xcodebuild clean build -workspace LearnCICDSwift/LearnCICDSwift.xcworkspace -scheme LearnCICDSwift -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=15.4' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
+  - bundle exec xcodebuild test -workspace LearnCICDSwift/LearnCICDSwift.xcworkspace -scheme LearnCICDSwift -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=15.4' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
