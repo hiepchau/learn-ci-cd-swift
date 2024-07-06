@@ -5,7 +5,6 @@ xcode_scheme: LearnCICDSwift
 xcode_destination: platform=iOS Simulator,OS=15.4,name=iPhone 12 Pro Max
 
 before_install:
-  - gem install bundler
   - bundle install
   - bundle exec pod install --project-directory=LearnCICDSwift
 
