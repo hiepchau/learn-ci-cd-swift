@@ -6,10 +6,8 @@ xcode_destination: platform=iOS Simulator,OS=15.4,name=iPhone 12 Pro Max
 
 before_install:
   - cd LearnCICDSwift
-  - rvm install 3.0.0
-  - rvm use 3.0.0 --default
-  - gem install bundler
-  - bundle install
+  - gem install bundler -v 2.2.33
+  - bundle _2.2.33_ install
   - bundle exec pod install --repo-update
 
 script:
