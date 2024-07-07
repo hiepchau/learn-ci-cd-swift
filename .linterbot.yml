@@ -1,0 +1,8 @@
+# github_access_token: 'YOUR_GITHUB_ACCESS_TOKEN' # Already setup onTravis CI
+linter_report_file: 'swiftlint-report.json'
+project_base_path: 'LearnCICDSwift'
+
+linters:
+  swiftlint:
+    command: 'swiftlint lint'
+    files: 'LearnCICDSwift/**/*.swift'
