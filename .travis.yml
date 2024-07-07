@@ -4,6 +4,10 @@ xcode_workspace: LearnCICDSwift/LearnCICDSwift.xcworkspace
 xcode_scheme: LearnCICDSwift
 xcode_destination: platform=iOS Simulator,OS=15.4,name=iPhone 12 Pro Max
 
+cache:
+  - bundler
+  - cocoapods
+
 before_install:
   - cd LearnCICDSwift
   - gem install bundler -v 2.2.33
