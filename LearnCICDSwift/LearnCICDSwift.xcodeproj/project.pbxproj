@@ -66,10 +66,13 @@
 		592C1B826CCBB377E0768FEE /* Pods-LearnCICDSwift-LearnCICDSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCICDSwift-LearnCICDSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-LearnCICDSwift-LearnCICDSwiftUITests/Pods-LearnCICDSwift-LearnCICDSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6342C7808FA0D6C29FFBE5C2 /* Pods-LearnCICDSwift-LearnCICDSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCICDSwift-LearnCICDSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-LearnCICDSwift-LearnCICDSwiftUITests/Pods-LearnCICDSwift-LearnCICDSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		71391A80DAAA0F6BDA399ABB /* Pods-LearnCICDSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCICDSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-LearnCICDSwiftTests/Pods-LearnCICDSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75BE96A15289DAB2857B97EA /* Pods-LearnCICDSwift.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCICDSwift.staging.xcconfig"; path = "Target Support Files/Pods-LearnCICDSwift/Pods-LearnCICDSwift.staging.xcconfig"; sourceTree = "<group>"; };
 		7F1089BE9627FAAB76A3D70B /* Pods_LearnCICDSwift_LearnCICDSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnCICDSwift_LearnCICDSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82E6E1F724A1EC6DDC21EEEB /* Pods-LearnCICDSwiftTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCICDSwiftTests.staging.xcconfig"; path = "Target Support Files/Pods-LearnCICDSwiftTests/Pods-LearnCICDSwiftTests.staging.xcconfig"; sourceTree = "<group>"; };
 		994F925B58E04446DE104DEA /* Pods_LearnCICDSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnCICDSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A60C9EDDEB0A06E33D1CA4 /* Pods-LearnCICDSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCICDSwift.release.xcconfig"; path = "Target Support Files/Pods-LearnCICDSwift/Pods-LearnCICDSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F4D6F654AD4502CB2214A6B5 /* Pods-LearnCICDSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCICDSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-LearnCICDSwiftTests/Pods-LearnCICDSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBBE2CD7D0D610D3E0EFE0E4 /* Pods-LearnCICDSwift-LearnCICDSwiftUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCICDSwift-LearnCICDSwiftUITests.staging.xcconfig"; path = "Target Support Files/Pods-LearnCICDSwift-LearnCICDSwiftUITests/Pods-LearnCICDSwift-LearnCICDSwiftUITests.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,9 @@
 				6342C7808FA0D6C29FFBE5C2 /* Pods-LearnCICDSwift-LearnCICDSwiftUITests.release.xcconfig */,
 				71391A80DAAA0F6BDA399ABB /* Pods-LearnCICDSwiftTests.debug.xcconfig */,
 				F4D6F654AD4502CB2214A6B5 /* Pods-LearnCICDSwiftTests.release.xcconfig */,
+				75BE96A15289DAB2857B97EA /* Pods-LearnCICDSwift.staging.xcconfig */,
+				FBBE2CD7D0D610D3E0EFE0E4 /* Pods-LearnCICDSwift-LearnCICDSwiftUITests.staging.xcconfig */,
+				82E6E1F724A1EC6DDC21EEEB /* Pods-LearnCICDSwiftTests.staging.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 				1F93EA092C31888400000BA5 /* Frameworks */,
 				1F93EA0A2C31888400000BA5 /* Resources */,
 				3732F51BDDE1CF451A3E5549 /* [CP] Embed Pods Frameworks */,
+				1FC3CF832C3A80BB00F64846 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -345,6 +352,25 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1FC3CF832C3A80BB00F64846 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		23DD12319DEC19605065589B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -675,6 +701,7 @@
 		};
 		1F93EA3A2C31888700000BA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71391A80DAAA0F6BDA399ABB /* Pods-LearnCICDSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -695,6 +722,7 @@
 		};
 		1F93EA3B2C31888700000BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4D6F654AD4502CB2214A6B5 /* Pods-LearnCICDSwiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -715,6 +743,7 @@
 		};
 		1F93EA3D2C31888700000BA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592C1B826CCBB377E0768FEE /* Pods-LearnCICDSwift-LearnCICDSwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -733,6 +762,7 @@
 		};
 		1F93EA3E2C31888700000BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6342C7808FA0D6C29FFBE5C2 /* Pods-LearnCICDSwift-LearnCICDSwiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -815,7 +845,7 @@
 		};
 		1F93EA402C31939A00000BA5 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4090201D8957DADBED289EC4 /* Pods-LearnCICDSwift.debug.xcconfig */;
+			baseConfigurationReference = 75BE96A15289DAB2857B97EA /* Pods-LearnCICDSwift.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -846,6 +876,7 @@
 		};
 		1F93EA412C31939A00000BA5 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E6E1F724A1EC6DDC21EEEB /* Pods-LearnCICDSwiftTests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -866,6 +897,7 @@
 		};
 		1F93EA422C31939A00000BA5 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBE2CD7D0D610D3E0EFE0E4 /* Pods-LearnCICDSwift-LearnCICDSwiftUITests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
