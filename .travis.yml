@@ -12,8 +12,14 @@ before_install:
   - cd LearnCICDSwift
   - gem install bundler -v 2.2.33
   - bundle _2.2.33_ install
+  - gem install linterbot
   - bundle exec pod install --repo-update
 
+
+before_script:
+  - chmod a+x ./scripts/linter
+
 script:
+  - ./scripts/linter
   - bundle exec xcodebuild clean build -workspace LearnCICDSwift/LearnCICDSwift.xcworkspace -scheme LearnCICDSwift -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=15.4' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
   - bundle exec xcodebuild test -workspace LearnCICDSwift/LearnCICDSwift.xcworkspace -scheme LearnCICDSwift -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=15.4' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty

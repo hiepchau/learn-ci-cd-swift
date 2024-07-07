@@ -1,0 +1,4 @@
+linters:
+  swiftlint:
+    command: 'swiftlint lint'
+    files: 'LearnCICDSwift/**/*.swift'
